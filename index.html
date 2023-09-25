@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showPicker</title>
+    <link rel="stylesheet" href="main.css" />
+
+  </head>
+  <body>
+    <header class="m-3">
+      <h1 class="title">Web API: showPicker</h1>
+    </header>
+    <main class="m-3">
+      <datalist id="list">
+        <option value="Apple" />
+        <option value="Lemon" />
+        <option value="Blueberry" />
+        <option value="Banana" />
+        <option value="Strawberry" />
+      </datalist>
+      <form action="#" name="myForm">
+        <p class="my-3">
+          <button id="pickBtn">Show Picker</button>
+    <!--       <button type="button" id="pickBtn">Show Picker</button> -->
+        </p>
+        <p class="my-3">
+          <label for="list">Datalist</label>
+          <input list="list" id="inputDatalist" name="inputDatalist" />
+        </p>
+        <p class="my-3">
+          <label for="inputColor">Color</label>
+          <input type="color" id="inputColor" name="inputColor" />
+        </p>
+        <p class="my-3">
+          <label for="inDate">Date</label><input type="date" id="inDate" name="inDate" />
+        </p>
+        <p class="my-3">
+          <label for="inTime">Time</label><input type="time" id="inTime" name="inTime" />
+        </p>
+        <p class="my-3">
+          <label for="inputLocal">Local DateTime</label>
+          <input type="datetime-local" id="inputLocal" name="inputLocal" />
+        </p>
+        <p class="my-3">
+          <label for="inMonth">Month</label>
+          <input type="month" id="inMonth" name="inMonth" />
+        </p>
+        <p class="my-3">
+          <label for="inWeek">Week</label>
+          <input type="week" id="inWeek" name="inWeek" />
+        </p>
+        <p class="my-3">
+          <label for="inputFile">File</label>
+          <input type="file" id="inputFile" accepts="image/*" name="inputFile" />
+        </p>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.m-3 {
+  margin: 12px;
+}
+.my-3 {
+  margin: 12px 0;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+}
+input {
+  margin-left: 10px;
+}
