@@ -3,19 +3,30 @@
 *::after {
   box-sizing: border-box;
 }
+
+.d-flex {
+  display: flex;
+}
 .m-3 {
   margin: 12px;
 }
 .my-3 {
   margin: 12px 0;
 }
+.mx-5 {
+  margin: 0 20px;
+}
+.ml-5 {
+  margin-left: 20px;
+}
 .title {
   font-size: 24px;
   font-weight: bold;
 }
+
 label {
   font-weight: bold;
 }
-input {
-  margin-left: 10px;
+input:not([type="number"]) {
+  margin-left: 8px;
 }
