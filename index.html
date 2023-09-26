@@ -70,8 +70,17 @@
       </p>
       <p class="my-3">
         <label for="inoutSelectContent">select content</label>
-        <input class="input-selectContent" name="inoutSelectContent" type="text" value="Press the right button to select" width="200" autocomplete="off">
-        <button id="selectBtn" type="button" value="select">Select</button>
+        <input id="inoutSelectContent" class="input-selectContent" name="inoutSelectContent" type="text" value="Press the right button to select" autocomplete="off">
+        <button id="selectBtn" type="button">Select</button>
+      </p>
+      <p class="my-3">
+        <label class="mb-4" for="inputEyeDropper">EyeDropper</label>
+        <br>
+        <!-- <input id="inputEyeDropper" class="inputEyeDropper" name="inputEyeDropper" type="color"> -->
+        <p id="eyeDropperResult" class="displayEyeDropper"></p>
+        <span id="eyeDropperHex"></span>
+        <br>
+        <button id="btnEyeDropper" type="button">Select2</button>
       </p>
     </main>
     <script src="main.js"></script>

@@ -33,7 +33,7 @@ document.getElementById('pickBtn').addEventListener('click', () => {
 const inputNumber = document.querySelector('input[type=number]');
 // Plus
 document.getElementById('btnPlus').addEventListener('click', () => {
-  inputNumber.stepUp();
+  inputNumber.stepUp(); // can pass parameter
 })
 
 // Minus
@@ -49,11 +49,11 @@ document.getElementById('selectBtn').addEventListener('click', () => {
 
 
 // EyeDropper
-// document.querySelector('.button--eyedropper')
-//   .addEventListener('click',
-//     async () => {
-//       const eyeDropper = new EyeDropper();
-//       const result = await eyeDropper.open();
-//       const colorHexValue = result.sRGBHex;
-//     }
-//   )
+const resultElement = document.getElementById("eyeDropperResult");
+const resultHexElement = document.getElementById("eyeDropperHex");
+document.getElementById('btnEyeDropper').addEventListener('click', async () => {
+  const eyeDropper = new EyeDropper();
+  const result = await eyeDropper.open();
+  resultHexElement.textContent = result.sRGBHex;
+  resultElement.style.backgroundColor = result.sRGBHex;
+});
